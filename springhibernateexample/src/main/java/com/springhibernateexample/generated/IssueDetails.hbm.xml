@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jul 6, 2018 11:16:07 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="springhibernateexample" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.springhibernateexample.generated.IssueDetails" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="issue_details">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="com.springhibernateexample.generated.Book" embed-xml="true" fetch="select" insert="true" name="book" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="book_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="com.springhibernateexample.generated.User" embed-xml="true" fetch="select" insert="true" name="user" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column name="issued_to" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="issueDate" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="issue_date" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="issuedUntil" optimistic-lock="true" type="date" unique="false">
+            <column length="10" name="issued_until" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

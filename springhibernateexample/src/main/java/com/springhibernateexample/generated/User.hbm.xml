@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jul 6, 2018 11:16:07 AM by Hibernate Tools 5.3.0.Beta2 --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="springhibernateexample" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.springhibernateexample.generated.User" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="user">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="shortId" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="short_id" not-null="true" unique="true"/>
+        </property>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="name" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="class_" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="class"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="issueDetailses" optimistic-lock="true" sort="unsorted" table="issue_details">
+            <key on-delete="noaction">
+                <column name="issued_to" not-null="true"/>
+            </key>
+            <one-to-many class="com.springhibernateexample.generated.IssueDetails" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>
