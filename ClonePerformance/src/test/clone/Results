@@ -1,0 +1,97 @@
+Times=10
+Time taken, cloneUsingCloneable = 0 msecs.
+Time taken, cloneUsingCopyConstructor = 0 msecs.
+Time taken, cloneUsingSerialization = 155 msecs.
+
+Times=100
+Time taken, cloneUsingCloneable = 0 msecs.
+Time taken, cloneUsingCopyConstructor = 1 msecs.
+Time taken, cloneUsingSerialization = 364 msecs.
+
+Times=100
+Time taken, cloneUsingCloneable = 0 msecs.
+Time taken, cloneUsingCopyConstructor = 0 msecs.
+Time taken, cloneUsingSerialization = 281 msecs.
+
+Times=1000
+Time taken, cloneUsingCloneable = 0 msecs.
+Time taken, cloneUsingCopyConstructor = 0 msecs.
+Time taken, cloneUsingSerialization = 904 msecs.
+
+Times=10000
+Time taken, cloneUsingCloneable = 10 msecs.
+Time taken, cloneUsingCopyConstructor = 0 msecs.
+Time taken, cloneUsingSerialization = 3898 msecs.
+
+Times=10000
+Time taken, cloneUsingCloneable = 8 msecs.
+Time taken, cloneUsingCopyConstructor = 5 msecs.
+Time taken, cloneUsingSerialization = 3864 msecs.
+
+Times=10000
+Time taken, cloneUsingCloneable = 8 msecs.
+Time taken, cloneUsingCopyConstructor = 6 msecs.
+Time taken, cloneUsingSerialization = 3813 msecs.
+
+Times=10000
+Time taken, cloneUsingCloneable = 10 msecs.
+Time taken, cloneUsingCopyConstructor = 16 msecs.
+Time taken, cloneUsingSerialization = 3760 msecs.
+
+Times=100000
+Time taken, cloneUsingCloneable = 40 msecs.
+Time taken, cloneUsingCopyConstructor = 30 msecs.
+Time taken, cloneUsingSerialization = 14199 msecs.
+
+15.5, 3.64, 2.81, .9, .4, .4, .14
+
+---
+
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861
+Cloned OsObject, cloneUsingCloneable = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -1750607959
+Time to cloneUsingCloneable 1 Times: = 0 msecs.
+Cloned OsObject, cloneUsingCopyConstructor = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -1750607959
+Time to cloneUsingCopyConstructor 1 Times: = 0 msecs.
+Cloned OsObject, cloneUsingSerialization = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -1750607959
+Time to cloneUsingSerialization 1 Times: = 16 msecs.
+
+
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861
+Cloned OsObject, cloneUsingCloneable = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -733860696
+Time to cloneUsingCloneable 1000 Times: = 0 msecs.
+Cloned OsObject, cloneUsingCopyConstructor = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -733860696
+Time to cloneUsingCopyConstructor 1000 Times: = 0 msecs.
+Cloned OsObject, cloneUsingSerialization = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = -733860696
+Time to cloneUsingSerialization 1000 Times: = 595 msecs.
+
+With BVS and relations
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861
+Cloned OsObject, cloneUsingCloneable = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 326553874
+Time to cloneUsingCloneable 1000 Times: = 0 msecs.
+Cloned OsObject, cloneUsingCopyConstructor = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 326553874
+Time to cloneUsingCopyConstructor 1000 Times: = 32 msecs.
+Cloned OsObject, cloneUsingSerialization = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 326553874
+Time to cloneUsingSerialization 1000 Times: = 2253 msecs.
+
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861
+Cloned OsObject, cloneUsingCloneable = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 787063720
+Time to cloneUsingCloneable 1000 Times: = 0 msecs.
+Cloned OsObject, cloneUsingCopyConstructor = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 787063720
+Time to cloneUsingCopyConstructor 1000 Times: = 48 msecs.
+Cloned OsObject, cloneUsingSerialization = 
+[Id]:20922754961:[Type]:365301:[State]:23:[ParentId]:20922754861, Hashcode = 787063720
+Time to cloneUsingSerialization 1000 Times: = 2016 msecs.
+
+
+
