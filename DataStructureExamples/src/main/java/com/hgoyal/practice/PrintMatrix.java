@@ -1,7 +1,9 @@
 package com.hgoyal.practice;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 /**
  * Print a 2D Matrix of the form where input n = 5:
@@ -21,15 +23,28 @@ import java.io.InputStreamReader;
  */
 class PrintMatrix 
 {
-	public static void main (String[] args) throws Exception
+	public static void main (String[] args) throws FileNotFoundException
 	{
-		int[] input = readInput();
+		String filePath = "D:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
+		Scanner s = new Scanner(new FileInputStream(new File(filePath + "PrintMatrix.txt")));
 		
-		for (int i=1; i<=input[0]; i++)
+        int T = s.nextInt(); //no of tests
+        int i = 0;
+        
+        int[] input = new int[T]; //put all inputs in the array
+        while (i < T) 
+        {
+        	input[i++] = s.nextInt();
+        }
+		
+        //run program for each input
+		for (i=0; i<T; i++)
 		{
 		    int n = input[i];
 		    printMatrix(n);
 	    }
+		
+		s.close();
 	}
 	
 	private static void print2DArray(int[][] input, int size)
@@ -60,36 +75,4 @@ class PrintMatrix
         }
         print2DArray(output,size);
 	}
-	
-	private static int[] readInput() throws Exception
-	{
-	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String string;
-        string = br.readLine();
-        if (string != null)
-        {
-            int T = Integer.parseInt(string);
-            if (T>0)
-            {
-                int[] input = new int[T+1]; //max 100 tests + 1 for first line.
-                input[0] = T;
-                int i = 1;
-                while ((string = br.readLine()) != null && !string.equals("exit")) 
-                {
-                    input[i++] = Integer.parseInt(string);
-                }
-                return input;
-            }
-            else
-            {
-                int[] input = new int[1];
-                input[0] = T;
-                return input;
-            }
-        }
-        else
-        {
-            return null;
-        }
-    }
 }

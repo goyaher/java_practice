@@ -1,5 +1,8 @@
 package com.athenahealth.test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -32,10 +35,12 @@ import java.util.Scanner;
  */
 public class RobotPaths 
 {
-	public static void main(String args[])
+	public static void main(String args[]) throws FileNotFoundException
 	{
-		Scanner scanner = new Scanner(System.in);
-		int noOfTests = Integer.parseInt(scanner.nextLine());
+		String filePath = "D:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
+		Scanner scanner = new Scanner(new FileInputStream(new File(filePath + "RobotPaths.txt")));
+
+		int noOfTests = scanner.nextInt();
 		
 		for (int i=1; i<=noOfTests; i++)
 		{
