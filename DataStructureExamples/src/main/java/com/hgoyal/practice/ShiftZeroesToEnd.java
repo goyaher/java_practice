@@ -50,7 +50,7 @@ public class ShiftZeroesToEnd
 	
 	public static void main(String args[]) throws FileNotFoundException
 	{
-		String filePath = "G:\\Study\\eclipse_wspace\\DataStructures\\resources\\";
+		String filePath = "G:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
 		Scanner s = new Scanner(new FileInputStream(new File(filePath + "ShiftZeroesToEnd.txt")));
 		
 		try
