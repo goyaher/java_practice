@@ -1,7 +1,16 @@
 package com.hgoyal.practice;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * This needs to to fixed.
+ * 
+ * @author Hershit
+ *
+ */
 public class KthSmallestElement 
 {
 	private static void findKthSmallest(int arr[], int k)
@@ -30,9 +39,10 @@ public class KthSmallestElement
 		arr[end] = temp;
 	}
 	
-	public static void main(String args[])
+	public static void main(String args[]) throws FileNotFoundException
 	{
-		Scanner s = new Scanner(System.in);
+		String filePath = "G:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
+		Scanner s = new Scanner(new FileInputStream(new File(filePath + "KthSmallestElement.txt")));
 		int size = s.nextInt();
 		int[] arr = new int[size];
 		for (int i=0; i<=size-1; i++)
