@@ -1,0 +1,8 @@
+Topics Covered or Terminology:
+
+Lambda Expressions
+Streams
+Operations on streams
+ Terminal operations: reduce, forEach, min, max, sum
+ Intermediate operation: filter, map, sort, distinct
+Functional Interfaces - Predicate, Consumer, BinaryOperator, Function

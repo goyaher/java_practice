@@ -18,7 +18,7 @@ public class ArrayJourney
 {
 	public static void main(String args[]) throws FileNotFoundException
 	{
-		String filePath = "G:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
+		String filePath = "D:\\Study\\Git_Repository\\java_practice\\DataStructureExamples\\resources\\";
 		Scanner s = new Scanner(new FileInputStream(new File(filePath + "ArrayJourney.txt")));
 		int noOfTests = s.nextInt();
 		for (int t=1; t<=noOfTests; t++)
